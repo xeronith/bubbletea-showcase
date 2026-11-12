@@ -1,6 +1,6 @@
-// Package pages contains the interactive demos that make up the showcase.
-// Every page is an independent Bubble Tea model that the shell mounts and
-// unmounts.
+// Package pages contains the five interactive demos that make up the
+// showcase. Every page is an independent Bubble Tea model that the shell
+// mounts and unmounts.
 package pages
 
 import tea "charm.land/bubbletea/v2"
@@ -32,5 +32,9 @@ type Page interface {
 func All() []Page {
 	return []Page{
 		NewOverview(),
+		NewKitchen(),
+		NewGallery(),
+		NewMotion(),
+		NewQueue(),
 	}
 }
