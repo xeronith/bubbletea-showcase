@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+  <title id="title">Bubble Tea Showcase</title>
+  <desc id="desc">A hands-on tour of the Elm Architecture for the terminal.</desc>
+
+  <defs>
+    <linearGradient id="brand" x1="64" y1="0" x2="560" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF6AC1"/>
+      <stop offset="55%" stop-color="#B388FF"/>
+      <stop offset="100%" stop-color="#69E8FF"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="830" y1="0" x2="1210" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF6AC1"/>
+      <stop offset="50%" stop-color="#B388FF"/>
+      <stop offset="100%" stop-color="#69E8FF"/>
+    </linearGradient>
+    <radialGradient id="glowPink" cx="0" cy="0" r="1" gradientTransform="translate(190 40) rotate(45) scale(360)">
+      <stop offset="0%" stop-color="#FF6AC1" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#FF6AC1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="0" cy="0" r="1" gradientTransform="translate(1130 320) rotate(-135) scale(380)">
+      <stop offset="0%" stop-color="#69E8FF" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#69E8FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#B388FF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect width="1280" height="340" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="340" fill="#0D0B14"/>
+    <rect width="1280" height="340" fill="url(#grid)"/>
+    <rect width="1280" height="340" fill="url(#glowPink)"/>
+    <rect width="1280" height="340" fill="url(#glowCyan)"/>
+
+    <!-- cup mark -->
+    <g transform="translate(64 50)">
+      <rect width="46" height="46" rx="13" fill="#1C1430" stroke="#453563"/>
+      <path d="M13 21h16v8.5a8 8 0 0 1-16 0V21Z" fill="none" stroke="#FF6AC1" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M29 23h3.5a4.5 4.5 0 0 1 0 9H29" fill="none" stroke="#FF6AC1" stroke-width="2" stroke-linecap="round"/>
+      <path d="M18 15.5c-1.6-2.4 1.6-3.8 0-6.2M24 15.5c-1.6-2.4 1.6-3.8 0-6.2" fill="none" stroke="#69E8FF" stroke-width="1.6" stroke-linecap="round" opacity="0.9"/>
+    </g>
+    <text x="124" y="79" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" letter-spacing="4" fill="#9A8DB2">SHOWCASE</text>
+
+    <text x="64" y="166" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="66" font-weight="700" letter-spacing="-2" fill="url(#brand)">Bubble Tea</text>
+    <text x="66" y="207" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="19" fill="#F2EDFA">A hands-on tour of the Elm Architecture.</text>
+    <text x="66" y="235" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="14" fill="#9A8DB2">Five live demos · one immutable model · one pure view.</text>
+
+    <!-- chips -->
+    <g font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13">
+      <rect x="66" y="264" width="151" height="30" rx="9" fill="#1C1430" stroke="#2B2140"/>
+      <text x="82" y="284" fill="#69E8FF">bubbletea v2</text>
+
+      <rect x="229" y="264" width="108" height="30" rx="9" fill="#1C1430" stroke="#2B2140"/>
+      <text x="245" y="284" fill="#FF6AC1">5 demos</text>
+
+      <rect x="349" y="264" width="102" height="30" rx="9" fill="#1C1430" stroke="#2B2140"/>
+      <text x="365" y="284" fill="#7CF5B2">Go 1.26</text>
+
+      <rect x="463" y="264" width="128" height="30" rx="9" fill="#1C1430" stroke="#2B2140"/>
+      <text x="479" y="284" fill="#B388FF">MIT licensed</text>
+    </g>
+
+    <!-- mini terminal -->
+    <g>
+      <rect x="806" y="52" width="410" height="236" rx="16" fill="#151020" stroke="#2B2140"/>
+      <circle cx="830" cy="75" r="4" fill="#FF5D73"/>
+      <circle cx="844" cy="75" r="4" fill="#FFD479"/>
+      <circle cx="858" cy="75" r="4" fill="#7CF5B2"/>
+      <text x="884" y="79" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" fill="#6B5F80">bubbletea-showcase</text>
+      <line x1="806" y1="96" x2="1216" y2="96" stroke="#2B2140"/>
+
+      <rect x="830" y="113" width="3" height="11" rx="1.5" fill="#FF6AC1"/>
+      <text x="841" y="123" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" letter-spacing="1.5" fill="#B388FF">LIVE SPECTRUM</text>
+      <text x="1188" y="123" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" fill="#6B5F80">59 fps</text>
+
+      <g fill="url(#spectrum)">
+        <rect x="830" y="204" width="8" height="46" rx="1.5"/>
+        <rect x="842" y="188" width="8" height="62" rx="1.5"/>
+        <rect x="854" y="170" width="8" height="80" rx="1.5"/>
+        <rect x="866" y="183" width="8" height="67" rx="1.5"/>
+        <rect x="878" y="158" width="8" height="92" rx="1.5"/>
+        <rect x="890" y="143" width="8" height="107" rx="1.5"/>
+        <rect x="902" y="137" width="8" height="113" rx="1.5"/>
+        <rect x="914" y="151" width="8" height="99" rx="1.5"/>
+        <rect x="926" y="171" width="8" height="79" rx="1.5"/>
+        <rect x="938" y="160" width="8" height="90" rx="1.5"/>
+        <rect x="950" y="145" width="8" height="105" rx="1.5"/>
+        <rect x="962" y="153" width="8" height="97" rx="1.5"/>
+        <rect x="974" y="176" width="8" height="74" rx="1.5"/>
+        <rect x="986" y="184" width="8" height="66" rx="1.5"/>
+        <rect x="998" y="172" width="8" height="78" rx="1.5"/>
+        <rect x="1010" y="157" width="8" height="93" rx="1.5"/>
+        <rect x="1022" y="143" width="8" height="107" rx="1.5"/>
+        <rect x="1034" y="136" width="8" height="114" rx="1.5"/>
+        <rect x="1046" y="151" width="8" height="99" rx="1.5"/>
+        <rect x="1058" y="168" width="8" height="82" rx="1.5"/>
+        <rect x="1070" y="181" width="8" height="69" rx="1.5"/>
+        <rect x="1082" y="170" width="8" height="80" rx="1.5"/>
+        <rect x="1094" y="155" width="8" height="95" rx="1.5"/>
+        <rect x="1106" y="141" width="8" height="109" rx="1.5"/>
+        <rect x="1118" y="133" width="8" height="117" rx="1.5"/>
+        <rect x="1130" y="149" width="8" height="101" rx="1.5"/>
+        <rect x="1142" y="165" width="8" height="85" rx="1.5"/>
+        <rect x="1154" y="178" width="8" height="72" rx="1.5"/>
+        <rect x="1166" y="160" width="8" height="90" rx="1.5"/>
+        <rect x="1178" y="146" width="8" height="104" rx="1.5"/>
+      </g>
+      <line x1="830" y1="252" x2="1186" y2="252" stroke="#2B2140"/>
+
+      <text x="830" y="271" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" fill="#6B5F80">tea.Tick</text>
+      <text x="884" y="271" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" fill="#6B5F80">·</text>
+      <text x="894" y="271" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" fill="#6B5F80">tea.Batch</text>
+      <text x="964" y="271" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" fill="#6B5F80">·</text>
+      <text x="974" y="271" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" fill="#6B5F80">lipgloss</text>
+      <text x="1186" y="271" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" fill="#7CF5B2">60 fps</text>
+    </g>
+  </g>
+
+  <rect x="0.75" y="0.75" width="1278.5" height="338.5" rx="23.25" fill="none" stroke="#2B2140" stroke-width="1.5"/>
+</svg>
